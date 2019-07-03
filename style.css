@@ -32,22 +32,56 @@ ul {
 
 img {
   max-width: 100%;
-  height: auto;
 }
 /* main styles */
 .page {
   width: 100vw;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
 }
-.home {
+/* backgrounds */
+.part1 {
   background-color: green;
 }
-.about {
+.part2 {
   background-color: blue;
 }
-.team {
+.part3 {
   background-color: orange;
 }
-.contact {
+.part4 {
   background-color: yellow;
+}
+/* content boxes */
+.home {
+  background: #f0ebd8;
+  width: 80vw;
+  height: 70vh;
+  border-radius: 10px;
+}
+.about {
+  background: #f0ebd8;
+  width: 80vw;
+  height: 70vh;
+  border-radius: 10px;
+}
+.team {
+  background: #f0ebd8;
+  width: 80vw;
+  height: 70vh;
+  border-radius: 10px;
+}
+.contact {
+  background: #f0ebd8;
+  width: 80vw;
+  height: 70vh;
+  border-radius: 10px;
+}
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 5vh;
+  font-weight: 700;
 }
