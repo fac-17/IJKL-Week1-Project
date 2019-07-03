@@ -58,16 +58,30 @@ img {
   justify-content: space-around;
   font-family: Montserrat;
   font-weight: 700;
+  position: fixed;
+  background-color: white;
 }
 
 .nav-bar a {
   text-decoration: none;
   color: black;
   border-style: solid;
-  width: 33vh;
+  width: 33.3vw;
   border-width: thick;
   height: 10vh;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#nav-about {
+  border-color: blue;
+}
+
+#nav-team {
+  border-color: orange;
+}
+
+#nav-contact {
+  border-color: yellow;
 }
