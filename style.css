@@ -56,32 +56,33 @@ img {
   background-color: yellow;
 }
 /* content boxes */
+
+.container {
+  background: #f0ebd8;
+  width: 80vw;
+  height: 70vh;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .home {
-  background: #f0ebd8;
-  width: 80vw;
-  height: 70vh;
-  border-radius: 10px;
 }
+
 .about {
-  background: #f0ebd8;
-  width: 80vw;
-  height: 70vh;
-  border-radius: 10px;
 }
+
 .team {
-  background: #f0ebd8;
-  width: 80vw;
-  height: 70vh;
-  border-radius: 10px;
 }
+
 .contact {
-  background: #f0ebd8;
-  width: 80vw;
-  height: 70vh;
-  border-radius: 10px;
 }
+
 .title {
   font-family: "Montserrat", sans-serif;
   font-size: 5vh;
   font-weight: 700;
+  padding-bottom: 5vh;
 }
