@@ -32,27 +32,61 @@ ul {
 
 img {
   max-width: 100%;
-  height: auto;
 }
 
 /* main styles */
 .page {
   width: 100vw;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
 }
-.home {
+/* backgrounds */
+.part1 {
   background-color: green;
 }
-.about {
+.part2 {
   background-color: blue;
 }
-.team {
+.part3 {
   background-color: orange;
 }
-.contact {
+.part4 {
   background-color: yellow;
 }
+/* content boxes */
 
+.container {
+  background: #f0ebd8;
+  width: 80vw;
+  height: 70vh;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home {
+}
+
+.about {
+}
+
+.team {
+}
+
+.contact {
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 5vh;
+  font-weight: 700;
+  padding-bottom: 5vh;
+}
 .nav-bar {
   display: flex;
   justify-content: space-around;
