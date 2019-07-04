@@ -66,33 +66,6 @@ img {
   height: 1px;
   overflow: hidden;
 }
-.container {
-  background: #eeebd0;
-  width: 80vw;
-  height: 70vh;
-  margin-top: 10vh;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.title {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 2em;
-  padding-bottom: 2vh;
-  text-align: center;
-}
-.tagline {
-  font-size: 1rem;
-  text-align: center;
-}
-.description {
-  font-size: 0.8rem;
-  width: 70%;
-  text-align: justify;
-}
 .nav-bar {
   display: flex;
   justify-content: space-around;
@@ -124,6 +97,46 @@ img {
 
 #nav-contact {
   border-color: #f4be53;
+}
+
+.container {
+  background: #eeebd0;
+  width: 80vw;
+  height: 70vh;
+  margin-top: 10vh;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+  padding-bottom: 2vh;
+  text-align: center;
+}
+.tagline {
+  font-size: 1rem;
+  text-align: center;
+}
+.description {
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  width: 70%;
+  text-align: justify;
+}
+.scroll-arrow {
+  color: black;
+  font-size: 2em;
+  border-style: none;
+  border-width: none;
+  text-decoration: none;
+  margin: 5vh auto 0 auto;
+}
+.scroll-arrow.down {
+  transform: rotate(180deg);
 }
 
 .grid {
@@ -211,16 +224,6 @@ img {
       "gregor gregor gregor gregor";
   }
 }
-
-.scroll-arrow {
-  color: black;
-  font-size: 2em;
-  border-style: none;
-  border-width: none;
-  text-decoration: none;
-  margin: 5vh auto 0 auto;
-}
-
 form {
   max-width: 650px;
 }
