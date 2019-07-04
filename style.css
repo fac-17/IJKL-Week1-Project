@@ -1,7 +1,7 @@
 /* basic css reset */
 html {
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 2vmax;
 }
 
 *,
@@ -45,23 +45,24 @@ img {
 }
 /* backgrounds */
 .part1 {
-  background-color: green;
+  background-color: #6ecc82;
 }
 .part2 {
-  background-color: blue;
+  background-color: #e04e38;
 }
 .part3 {
-  background-color: orange;
+  background-color: #60a3bc;
 }
 .part4 {
-  background-color: yellow;
+  background-color: #f4be53;
 }
 /* content boxes */
 
 .container {
-  background: #f0ebd8;
+  background: #eeebd0;
   width: 80vw;
   height: 70vh;
+  margin-top: 10vh;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -74,6 +75,11 @@ img {
 
 .about {
 }
+.description {
+  font-size: 0.8rem;
+  width: 70%;
+  text-align: justify;
+}
 
 .team {
 }
@@ -83,8 +89,8 @@ img {
 
 .title {
   font-family: "Montserrat", sans-serif;
-  font-size: 5vh;
   font-weight: 700;
+  font-size: 2em;
   padding-bottom: 5vh;
 }
 .nav-bar {
@@ -93,7 +99,7 @@ img {
   font-family: Montserrat;
   font-weight: 700;
   position: fixed;
-  background-color: white;
+  background-color: #eeebd0;
 }
 
 .nav-bar a {
@@ -109,13 +115,19 @@ img {
 }
 
 #nav-about {
-  border-color: blue;
+  border-color: #e04e38;
 }
 
 #nav-team {
-  border-color: orange;
+  border-color: #60a3bc;
 }
 
 #nav-contact {
-  border-color: yellow;
+  border-color: #f4be53;
+}
+@ media
+@media only screen and (max-width: 640px) {
+  .description {
+    font-size: 2vh;
+  }
 }
