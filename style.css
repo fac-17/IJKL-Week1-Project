@@ -225,8 +225,8 @@ textarea {
 }
 
 label {
-  padding: 12px 12px 12px 0;
   display: inline-block;
+  font-size: 0.6em;
 }
 
 input[type="submit"] {
@@ -238,4 +238,23 @@ input[type="submit"] {
   border-radius: 4px;
   cursor: pointer;
   float: right;
+}
+
+.contact .description {
+  text-align: center;
+  padding-bottom: 1em;
+  padding-right: 2em;
+  align-content: center;
+  width: 100%;
+}
+
+.contact .title {
+  padding-bottom: 1em;
+  text-align: center;
+  padding-right: 1em;
+}
+
+#contact > article {
+  flex-direction: row;
+  flex-wrap: wrap;
 }
