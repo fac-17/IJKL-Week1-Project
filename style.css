@@ -128,6 +128,72 @@ img {
   border-color: #f4be53;
 }
 
+<<<<<<< head .grid {
+  display: grid;
+  border: 2px solid black;
+  height: 80%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "christine christine colette colette"
+    "christine christine colette colette"
+    "reuben reuben gregor gregor"
+    "reuben reuben gregor gregor";
+}
+
+.christine {
+  grid-area: christine;
+}
+.colette {
+  grid-area: colette;
+}
+
+.reuben {
+  grid-area: reuben;
+}
+
+.gregor {
+  grid-area: gregor;
+}
+
+.member1 {
+  border-style: solid;
+  display: grid;
+  padding: 0.5em;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 3fr;
+  grid-template-areas:
+    "memPic memName"
+    "memPic memDesc";
+}
+
+.member2 {
+  border-style: solid;
+  display: grid;
+  padding: 0.5em;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 3fr;
+  grid-template-areas:
+    "memName memPic"
+    "memDesc memPic";
+}
+
+.memPic {
+  grid-area: memPic;
+}
+
+.memName {
+  grid-area: memName;
+  font-size: 1rem;
+}
+
+.memDesc {
+  grid-area: memDesc;
+  font-size: 0.6rem;
+  text-align: justify;
+  padding: 0.1em;
+}
+
 @media only screen and (max-width: 640px) {
   .description {
     font-size: 2vh;
