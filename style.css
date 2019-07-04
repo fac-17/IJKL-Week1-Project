@@ -90,10 +90,14 @@ img {
 }
 
 .title {
+  text-align: center;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 2em;
   padding-bottom: 5vh;
+}
+.tagline {
+  text-align: center;
 }
 .nav-bar {
   display: flex;
