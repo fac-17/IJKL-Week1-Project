@@ -67,6 +67,7 @@ img {
   overflow: hidden;
 }
 .nav-bar {
+  z-index: 1;
   display: flex;
   justify-content: space-around;
   font-family: Montserrat;
@@ -201,21 +202,41 @@ img {
 
 .memName {
   grid-area: memName;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .memDesc {
   grid-area: memDesc;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   text-align: justify;
   padding: 0.1em;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 2vmin;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .tagline {
+    font-size: 1.2rem;
+  }
   .description {
-    font-size: 0.85em;
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+  .scroll-arrow {
+    font-size: 5rem;
+  }
+  .memName {
+    font-size: 2.5rem;
   }
 
+  .memDesc {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+  }
   .grid {
     grid-template-areas:
       "christine christine christine christine"
