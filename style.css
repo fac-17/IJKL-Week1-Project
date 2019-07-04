@@ -140,6 +140,7 @@ img {
   transform: rotate(180deg);
 }
 
+/* Page 3 - Team Grid Styles */
 .grid {
   display: grid;
   height: 80%;
@@ -151,7 +152,7 @@ img {
     "reuben reuben gregor gregor"
     "reuben reuben gregor gregor";
 }
-
+/* Assigning grid areas to members */
 .christine {
   grid-area: christine;
 }
@@ -166,7 +167,7 @@ img {
 .gregor {
   grid-area: gregor;
 }
-
+/* Creating two member styles allows images to sit on outside edges*/
 .member1 {
   display: grid;
   justify-items: center;
@@ -237,6 +238,9 @@ img {
     font-size: 1.3rem;
     line-height: 1.5rem;
   }
+
+  /* When on mobile, images alternate Left/Right*/
+
   .grid {
     grid-template-areas:
       "christine christine christine christine"
@@ -245,6 +249,9 @@ img {
       "gregor gregor gregor gregor";
   }
 }
+
+/* Form for submission */
+
 form {
   max-width: 650px;
 }
