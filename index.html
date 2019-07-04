@@ -93,7 +93,76 @@
     <section class="page part4" id="contact">
       <article class="container contact">
         <h1 class="title">Contact Us</h1>
-        <p class="description">Lorem Ipsum</p>
+        <p class="description">
+          Are you interested in our services?<br />
+          Please fill in the below contact form and include a short
+          <br />description of the project youhave in mind.
+        </p>
+        <form action="/sendproject" method="post">
+          <div>
+            <label>Title</label><br />
+            <label>
+              <input type="radio" name="title" value="mr" tabindex="0" />
+              Mr
+            </label>
+            <label>
+              <input type="radio" name="title" value="mr" tabindex="0" />
+              Mrs
+            </label>
+            <label>
+              <input type="radio" name="title" value="mr" tabindex="0" />
+              Miss
+            </label>
+          </div>
+          <div>
+            <label for="first_name">First Name</label>
+            <input
+              type="text"
+              id="first_name"
+              name="first_name"
+              tabindex="0"
+              minlength="2"
+              required
+            />
+          </div>
+          <div>
+            <label for="last_name">Last Name</label>
+            <input
+              type="text"
+              id="last_name"
+              name="last_name"
+              tabindex="0"
+              minlength="2"
+              required
+            />
+          </div>
+          <div>
+            <label for="email_address">E-mail address</label>
+            <input
+              type="text"
+              id="email_address"
+              name="email_address"
+              tabindex="0"
+              required
+              pattern="^\w+[\w-\.]*\@\w+((-\w+)|(\w*))\.[a-z]{2,3}$
+              "
+            />
+          </div>
+          <div>
+            <label for="description">Description of Project</label>
+            <input
+              type="text"
+              id="description"
+              name="description"
+              tabindex="0"
+              minlength="2"
+              required
+            />
+          </div>
+          <div>
+            <input type="submit" value-"Submit">
+          </div>
+        </form>
       </article>
       <a href="#about" class="scroll-arrow">&#8679;</a>
     </section>
