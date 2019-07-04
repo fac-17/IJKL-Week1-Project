@@ -123,8 +123,8 @@ img {
   text-align: center;
 }
 .description {
-  font-size: 0.8rem;
-  line-height: 1.2rem;
+  font-size: 0.6rem;
+  line-height: 0.8rem;
   width: 70%;
   text-align: justify;
 }
@@ -208,7 +208,7 @@ img {
 
 .memDesc {
   grid-area: memDesc;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   text-align: justify;
   padding: 0.1em;
 }
@@ -224,8 +224,8 @@ img {
     font-size: 1.2rem;
   }
   .description {
-    font-size: 1.8rem;
-    line-height: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.6rem;
   }
   .scroll-arrow {
     font-size: 5rem;
