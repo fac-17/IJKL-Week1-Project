@@ -66,37 +66,8 @@ img {
   height: 1px;
   overflow: hidden;
 }
-.container {
-  background: #eeebd0;
-  width: 80vw;
-  height: 70vh;
-  margin-top: 10vh;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-/*Page 1*/
-.title {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 2em;
-  padding-bottom: 2vh;
-  text-align: center;
-}
-.tagline {
-  font-size: 1rem;
-  text-align: center;
-}
-/* Page 2 Styles */
-.description {
-  font-size: 0.8rem;
-  width: 70%;
-  text-align: justify;
-}
-/* Nav Bar styles */
 .nav-bar {
+  z-index: 1;
   display: flex;
   justify-content: space-around;
   font-family: Montserrat;
@@ -128,6 +99,47 @@ img {
 #nav-contact {
   border-color: #f4be53;
 }
+
+.container {
+  background: #eeebd0;
+  width: 80vw;
+  height: 70vh;
+  margin-top: 10vh;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+  padding-bottom: 2vh;
+  text-align: center;
+}
+.tagline {
+  font-size: 1rem;
+  text-align: center;
+}
+.description {
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  width: 70%;
+  text-align: justify;
+}
+.scroll-arrow {
+  color: black;
+  font-size: 2em;
+  border-style: none;
+  border-width: none;
+  text-decoration: none;
+  margin: 5vh auto 0 auto;
+}
+.scroll-arrow.down {
+  transform: rotate(180deg);
+}
+
 /* Page 3 - Team Grid Styles */
 .grid {
   display: grid;
@@ -191,21 +203,44 @@ img {
 
 .memName {
   grid-area: memName;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .memDesc {
   grid-area: memDesc;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   text-align: justify;
   padding: 0.1em;
 }
 
-@media only screen and (max-width: 640px) {
-  .description {
-    font-size: 0.85em;
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 2vmin;
   }
+  .title {
+    font-size: 2rem;
+  }
+  .tagline {
+    font-size: 1.2rem;
+  }
+  .description {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+  .scroll-arrow {
+    font-size: 5rem;
+  }
+  .memName {
+    font-size: 2.5rem;
+  }
+
+  .memDesc {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+  }
+
   /* When on mobile, images alternate Left/Right*/
+
   .grid {
     grid-template-areas:
       "christine christine christine christine"
@@ -214,16 +249,9 @@ img {
       "gregor gregor gregor gregor";
   }
 }
-/* Arrow for navigating between pages */
-.scroll-arrow {
-  color: black;
-  font-size: 2em;
-  border-style: none;
-  border-width: none;
-  text-decoration: none;
-  margin: 5vh auto 0 auto;
-}
+
 /* Form for submission */
+
 form {
   max-width: 650px;
 }
