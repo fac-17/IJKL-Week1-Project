@@ -171,8 +171,19 @@
               required
             />
           </div>
-          <div><input type="submit" value-"Submit"></div>
+          <div><input type="submit" value-"Submit" onclick="openPopUp()"></div>
         </form>
+
+        <div class="submitted-form-pop-up">
+          <div class="submitted-form-text">
+            Thank you for sending a pigeon!
+          </div>
+          <button class="go-back-to-page-button" onclick="goBackToPage()">
+            <a>
+              Close
+            </a>
+          </button>
+        </div>
 
         <script>
           const scriptURL =
@@ -189,5 +200,6 @@
       </article>
       <a href="#about" class="scroll-arrow">&#8679;</a>
     </section>
+    <script src="script.js"></script>
   </body>
 </html>
