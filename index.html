@@ -107,7 +107,7 @@
             include a short description of the project you <br />have in mind.
           </p>
         </div>
-        <form action="/sendproject" method="post">
+        <form name="submit-to-google-sheet" action="/sendproject" method="post">
           <div>
             <label>Title:</label><br />
             <label>
@@ -167,6 +167,19 @@
           </div>
           <div><input type="submit" value-"Submit"></div>
         </form>
+
+        <script>
+          const scriptURL =
+            "https://script.google.com/macros/s/AKfycbyuvzCPpoGQtzSYt3lO0JR1XEuRXYvCq38LlnZty7OvZfALaFU3/exec";
+          const form = document.forms["submit-to-google-sheet"];
+
+          form.addEventListener("submit", e => {
+            e.preventDefault();
+            fetch(scriptURL, { method: "POST", body: new FormData(form) })
+              .then(response => console.log("Success!", response))
+              .catch(error => console.error("Error!", error.message));
+          });
+        </script>
       </article>
       <a href="#about" class="scroll-arrow">&#8679;</a>
     </section>
