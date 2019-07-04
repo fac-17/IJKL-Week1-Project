@@ -70,30 +70,16 @@ img {
   justify-content: center;
   align-items: center;
 }
-
-.home {
-}
-
-.about {
-}
-
-.description {
-  font-size: 0.8rem;
-  width: 70%;
-  text-align: justify;
-}
-
-.team {
-}
-
-.contact {
-}
-
 .title {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 2em;
   padding-bottom: 5vh;
+}
+.description {
+  font-size: 0.8rem;
+  width: 70%;
+  text-align: justify;
 }
 .nav-bar {
   display: flex;
@@ -253,22 +239,18 @@ input[type="submit"] {
   cursor: pointer;
   float: right;
 }
-
+.contact {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 .contact .description {
   text-align: center;
-  padding-bottom: 1em;
-  padding-right: 2em;
+  padding: 1em;
   align-content: center;
   width: 100%;
 }
 
 .contact .title {
-  padding-bottom: 1em;
+  padding: 1em;
   text-align: center;
-  padding-right: 1em;
-}
-
-#contact > article {
-  flex-direction: row;
-  flex-wrap: wrap;
 }
