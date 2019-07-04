@@ -39,6 +39,7 @@ img {
   width: 100vw;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-family: "Roboto", sans-serif;
@@ -75,6 +76,7 @@ img {
 
 .about {
 }
+
 .description {
   font-size: 0.8rem;
   width: 70%;
@@ -126,23 +128,23 @@ img {
   border-color: #f4be53;
 }
 
-.grid {
+<<<<<<< head .grid {
   display: grid;
   border: 2px solid black;
   height: 80%;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
   grid-template-areas:
-  "christine christine colette colette"
-  "christine christine colette colette"
-  "reuben reuben gregor gregor"
-  "reuben reuben gregor gregor"
+    "christine christine colette colette"
+    "christine christine colette colette"
+    "reuben reuben gregor gregor"
+    "reuben reuben gregor gregor";
 }
 
-.christine{
+.christine {
   grid-area: christine;
 }
-.colette{
+.colette {
   grid-area: colette;
 }
 
@@ -150,7 +152,7 @@ img {
   grid-area: reuben;
 }
 
-.gregor  {
+.gregor {
   grid-area: gregor;
 }
 
@@ -161,8 +163,8 @@ img {
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr 3fr;
   grid-template-areas:
-  "memPic memName"
-  "memPic memDesc"
+    "memPic memName"
+    "memPic memDesc";
 }
 
 .member2 {
@@ -172,31 +174,37 @@ img {
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 3fr;
   grid-template-areas:
-  "memName memPic"
-  "memDesc memPic"
+    "memName memPic"
+    "memDesc memPic";
 }
 
-.memPic{
+.memPic {
   grid-area: memPic;
 }
 
-.memName{
+.memName {
   grid-area: memName;
   font-size: 1rem;
 }
 
-.memDesc{
+.memDesc {
   grid-area: memDesc;
   font-size: 0.6rem;
   text-align: justify;
   padding: 0.1em;
 }
 
-
-
-@ media
 @media only screen and (max-width: 640px) {
   .description {
     font-size: 2vh;
   }
+}
+
+.scroll-arrow {
+  color: black;
+  font-size: 2em;
+  border-style: none;
+  border-width: none;
+  text-decoration: none;
+  margin: 5vh auto 0 auto;
 }
