@@ -58,7 +58,14 @@ img {
   background-color: #f4be53;
 }
 /* content boxes */
-
+.scr-rdr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
 .container {
   background: #eeebd0;
   width: 80vw;
@@ -74,7 +81,12 @@ img {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 2em;
-  padding-bottom: 5vh;
+  padding-bottom: 2vh;
+  text-align: center;
+}
+.tagline {
+  font-size: 1rem;
+  text-align: center;
 }
 .description {
   font-size: 0.8rem;
