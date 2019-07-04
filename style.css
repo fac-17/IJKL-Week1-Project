@@ -130,7 +130,6 @@ img {
 
 .grid {
   display: grid;
-  border: 2px solid black;
   height: 80%;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
@@ -157,8 +156,9 @@ img {
 }
 
 .member1 {
-  border-style: solid;
   display: grid;
+  justify-items: center;
+  align-items: center;
   padding: 0.5em;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr 3fr;
@@ -168,8 +168,9 @@ img {
 }
 
 .member2 {
-  border-style: solid;
   display: grid;
+  justify-items: center;
+  align-items: center;
   padding: 0.5em;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 3fr;
@@ -180,6 +181,11 @@ img {
 
 .memPic {
   grid-area: memPic;
+  overflow: hidden;
+  object-fit: contain;
+  padding: 0.5em;
+  max-height: 100%;
+  border-radius: 50%;
 }
 
 .memName {
@@ -196,7 +202,15 @@ img {
 
 @media only screen and (max-width: 640px) {
   .description {
-    font-size: 2vh;
+    font-size: 0.85em;
+  }
+
+  .grid {
+    grid-template-areas:
+      "christine christine christine christine"
+      "colette colette colette colette"
+      "reuben reuben reuben reuben"
+      "gregor gregor gregor gregor";
   }
 }
 
