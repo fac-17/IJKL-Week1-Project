@@ -296,4 +296,28 @@ input[type="submit"] {
 .contact .title {
   padding: 1em;
   text-align: center;
+  position: relative;
+}
+
+.submitted-form-pop-up {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 17em;
+  position: absolute;
+  margin: auto;
+  border: 3px solid #6ecc82;
+  z-index: 9999;
+  background: #eeebd0;
+  border-radius: 8px;
+  padding: 1em;
+}
+
+.go-back-to-page-button {
+  padding: 1em;
+  margin-top: 1em;
+  float: right;
+  background: #6ecc82;
+  border: none;
 }
