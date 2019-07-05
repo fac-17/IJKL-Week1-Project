@@ -94,6 +94,7 @@ html {
 
 #nav-about {
   border-color: #e04e38;
+  font-size: ;
 }
 
 #nav-team {
@@ -353,6 +354,7 @@ input[type="submit"] {
   border-radius: 4px;
   cursor: pointer;
   float: right;
+  font-size: 1em;
 }
 .contact {
   flex-direction: row;
