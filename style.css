@@ -305,24 +305,23 @@ html {
     font-size: 1.8em;
     line-height: 1.5em;
   }
-}
 
-#nav-about {
-  font-size: 2em;
-}
+  #nav-about {
+    font-size: 2em;
+  }
 
-#nav-team {
-  font-size: 2em;
-}
+  #nav-team {
+    font-size: 2em;
+  }
 
-#nav-contact {
-  font-size: 2em;
-}
+  #nav-contact {
+    font-size: 2em;
+  }
 
-input[type="submit"] {
-  font-size: 2em;
+  input[type="submit"] {
+    font-size: 2em;
+  }
 }
-
 /* Form for submission */
 
 form {
@@ -393,4 +392,14 @@ input[type="submit"] {
   float: right;
   background: #6ecc82;
   border: none;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: #f4be53;
+  bottom: 0.7em;
+  font-family: "Montserrat", sans-serif;
+  color: #3d3d3d;
+  font-size: 0.5em;
 }
