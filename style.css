@@ -42,7 +42,7 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: "Roboto", sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
 /* backgrounds */
 .part1 {
@@ -78,7 +78,7 @@ img {
 
 .nav-bar a {
   text-decoration: none;
-  color: black;
+  color: #2c3a47;
   border-style: solid;
   width: 33.3vw;
   border-width: thick;
@@ -113,6 +113,7 @@ img {
 }
 .title {
   font-family: "Montserrat", sans-serif;
+  color: #3d3d3d;
   font-weight: 700;
   font-size: 2em;
   padding-bottom: 2vh;
@@ -129,7 +130,7 @@ img {
   text-align: justify;
 }
 .scroll-arrow {
-  color: black;
+  color: #2c3a47;
   font-size: 2em;
   border-style: none;
   border-width: none;
@@ -236,7 +237,7 @@ img {
 
   .memDesc {
     font-size: 1.3rem;
-    line-height: 1.5rem;
+    line-height: 1.4rem;
   }
 
   /* When on mobile, images alternate Left/Right*/
@@ -273,7 +274,7 @@ label {
 }
 
 input[type="submit"] {
-  background-color: #4caf50;
+  background-color: #13864d;
   color: white;
   margin: 10px;
   padding: 12px 20px;
