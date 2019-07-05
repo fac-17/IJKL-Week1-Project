@@ -222,11 +222,12 @@ img {
     font-size: 2rem;
   }
   .tagline {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
   }
   .description {
     font-size: 1.5rem;
     line-height: 1.6rem;
+    width: 80vw;
   }
   .scroll-arrow {
     font-size: 5rem;
@@ -237,8 +238,8 @@ img {
   }
 
   .memDesc {
-    font-size: 1.3rem;
-    line-height: 1.4rem;
+    font-size: 1.6rem;
+    line-height: 2rem;
   }
 
   /* When on mobile, images alternate Left/Right*/
@@ -249,6 +250,7 @@ img {
       "colette colette colette colette"
       "reuben reuben reuben reuben"
       "gregor gregor gregor gregor";
+    height: 90%;
   }
 
   form label {
@@ -257,20 +259,48 @@ img {
   }
 
   form input[type="text"],
-  select, textarea {
+  select,
+  textarea {
     margin-top: 1em;
     margin-bottom: 1em;
+  }
+
+  form input[type="radio"],
+  select,
+  textarea {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  .container {
+    height: 95vh;
+    width: 97vw;
+  }
+
+  .title {
+    font-size: 4em;
+  }
+
+  .description {
+    font-size: 1.8em;
+    line-height: 1.5em;
+  }
 }
 
-form input[type="radio"],
-select, textarea {
-  margin-top: 1em;
-  margin-bottom: 1em;
+#nav-about {
+  font-size: 2em;
 }
 
-.container {
-  height: 95vh;
-  width: 97vw;
+#nav-team {
+  font-size: 2em;
+}
+
+#nav-contact {
+  font-size: 2em;
+}
+
+input[type="submit"] {
+  font-size: 2em;
 }
 
 /* Form for submission */
