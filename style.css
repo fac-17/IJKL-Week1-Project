@@ -230,6 +230,7 @@ img {
   }
   .scroll-arrow {
     font-size: 5rem;
+    margin: 1vh 0vh 1vh 0vh;
   }
   .memName {
     font-size: 2.5rem;
@@ -249,6 +250,27 @@ img {
       "reuben reuben reuben reuben"
       "gregor gregor gregor gregor";
   }
+
+  form label {
+    display: inline-block;
+    font-size: 1.7em;
+  }
+
+  form input[type="text"],
+  select, textarea {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+form input[type="radio"],
+select, textarea {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.container {
+  height: 95vh;
+  width: 97vw;
 }
 
 /* Form for submission */
