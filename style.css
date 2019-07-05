@@ -35,6 +35,10 @@ img {
 }
 
 /* main styles */
+
+html {
+  scroll-behavior: smooth;
+}
 .page {
   width: 100vw;
   height: 100vh;
@@ -135,10 +139,25 @@ img {
   border-style: none;
   border-width: none;
   text-decoration: none;
-  margin: 5vh auto 0 auto;
+  margin: 0 auto 0 auto;
+  transition: font-size 0.5s ease;
+  transform: translateY(0.2em);
 }
 .scroll-arrow.down {
   transform: rotate(180deg);
+}
+
+.scroll-arrow:hover {
+  color: #eeebd0;
+  font-size: 2.5em;
+}
+
+#back-to-top {
+  font-size: 0.6rem;
+  line-height: 0.8rem;
+  text-align: center;
+  position: relative;
+  top: -1em;
 }
 
 /* Page 3 - Team Grid Styles */
@@ -217,16 +236,18 @@ img {
 @media only screen and (max-width: 600px) {
   html {
     font-size: 2vmin;
+    scroll-behavior: auto;
   }
   .title {
     font-size: 2rem;
   }
   .tagline {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
   }
   .description {
     font-size: 1.5rem;
     line-height: 1.6rem;
+    width: 80vw;
   }
   .scroll-arrow {
     font-size: 5rem;
@@ -237,8 +258,8 @@ img {
   }
 
   .memDesc {
-    font-size: 1.3rem;
-    line-height: 1.4rem;
+    font-size: 1.6rem;
+    line-height: 2rem;
   }
 
   /* When on mobile, images alternate Left/Right*/
@@ -249,6 +270,7 @@ img {
       "colette colette colette colette"
       "reuben reuben reuben reuben"
       "gregor gregor gregor gregor";
+    height: 90%;
   }
 
   form label {
@@ -274,8 +296,32 @@ img {
     height: 95vh;
     width: 97vw;
   }
-}
 
+  .title {
+    font-size: 4em;
+  }
+
+  .description {
+    font-size: 1.8em;
+    line-height: 1.5em;
+  }
+
+  #nav-about {
+    font-size: 2em;
+  }
+
+  #nav-team {
+    font-size: 2em;
+  }
+
+  #nav-contact {
+    font-size: 2em;
+  }
+
+  input[type="submit"] {
+    font-size: 2em;
+  }
+}
 /* Form for submission */
 
 form {
