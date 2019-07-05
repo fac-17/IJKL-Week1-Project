@@ -35,6 +35,10 @@ img {
 }
 
 /* main styles */
+
+html {
+  scroll-behavior: smooth;
+}
 .page {
   width: 100vw;
   height: 100vh;
@@ -135,10 +139,25 @@ img {
   border-style: none;
   border-width: none;
   text-decoration: none;
-  margin: 5vh auto 0 auto;
+  margin: 0 auto 0 auto;
+  transition: font-size 0.5s ease;
+  transform: translateY(0.2em);
 }
 .scroll-arrow.down {
   transform: rotate(180deg);
+}
+
+.scroll-arrow:hover {
+  color: #eeebd0;
+  font-size: 2.5em;
+}
+
+#back-to-top {
+  font-size: 0.6rem;
+  line-height: 0.8rem;
+  text-align: center;
+  position: relative;
+  top: -1em;
 }
 
 /* Page 3 - Team Grid Styles */
@@ -209,7 +228,7 @@ img {
 
 .memDesc {
   grid-area: memDesc;
-  font-size: 0.6rem;
+  font-size: 0.55rem;
   text-align: justify;
   padding: 0.1em;
 }
@@ -217,6 +236,7 @@ img {
 @media only screen and (max-width: 600px) {
   html {
     font-size: 2vmin;
+    scroll-behavior: auto;
   }
   .title {
     font-size: 2rem;
