@@ -94,6 +94,7 @@ html {
 
 #nav-about {
   border-color: #e04e38;
+  font-size: ;
 }
 
 #nav-team {
@@ -305,24 +306,23 @@ html {
     font-size: 1.8em;
     line-height: 1.5em;
   }
-}
 
-#nav-about {
-  font-size: 2em;
-}
+  #nav-about {
+    font-size: 2em;
+  }
 
-#nav-team {
-  font-size: 2em;
-}
+  #nav-team {
+    font-size: 2em;
+  }
 
-#nav-contact {
-  font-size: 2em;
-}
+  #nav-contact {
+    font-size: 2em;
+  }
 
-input[type="submit"] {
-  font-size: 2em;
+  input[type="submit"] {
+    font-size: 2em;
+  }
 }
-
 /* Form for submission */
 
 form {
@@ -354,6 +354,7 @@ input[type="submit"] {
   border-radius: 4px;
   cursor: pointer;
   float: right;
+  font-size: 1em;
 }
 .contact {
   flex-direction: row;
