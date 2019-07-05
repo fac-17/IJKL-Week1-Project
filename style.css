@@ -209,7 +209,7 @@ img {
 
 .memDesc {
   grid-area: memDesc;
-  font-size: 0.6rem;
+  font-size: 0.55rem;
   text-align: justify;
   padding: 0.1em;
 }
