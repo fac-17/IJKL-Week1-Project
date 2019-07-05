@@ -257,20 +257,23 @@ img {
   }
 
   form input[type="text"],
-  select, textarea {
+  select,
+  textarea {
     margin-top: 1em;
     margin-bottom: 1em;
-}
+  }
 
-form input[type="radio"],
-select, textarea {
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
+  form input[type="radio"],
+  select,
+  textarea {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
 
-.container {
-  height: 95vh;
-  width: 97vw;
+  .container {
+    height: 95vh;
+    width: 97vw;
+  }
 }
 
 /* Form for submission */
@@ -343,4 +346,14 @@ input[type="submit"] {
   float: right;
   background: #6ecc82;
   border: none;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: #f4be53;
+  bottom: 0.7em;
+  font-family: "Montserrat", sans-serif;
+  color: #3d3d3d;
+  font-size: 0.5em;
 }
